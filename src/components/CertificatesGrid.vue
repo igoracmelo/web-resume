@@ -34,28 +34,35 @@ const certificates = [
     issuerName: "HackerRank",
     issuerImg: "hackerrank.jpeg",
     issuedDate: new Date("2022-11-02"),
-    url: "https://www.hackerrank.com/certificates/bb4cca58f57d"
+    url: "https://www.hackerrank.com/certificates/47a0cc46fe09"
   },
   {
     title: "Git - Básico ao avançado",
     issuerName: "Udemy",
     issuerImg: "udemy.jpeg",
     issuedDate: new Date("2022-03-02"),
-    url: "https://www.w3schools.com/tags/tag_progress.asp"
+    url: "https://www.udemy.com/certificate/UC-1b20e3e9-df16-4601-a6f9-5effa7df9117/"
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    issuerName: "freeCodeCamp",
+    issuerImg: "freecodecamp.jpeg",
+    issuedDate: new Date("2021-09-02"),
+    url: "https://freecodecamp.org/certification/igorcmelo/javascript-algorithms-and-data-structures"
   },
   {
     title: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
     issuerName: "Udemy",
     issuerImg: "udemy.jpeg",
     issuedDate: new Date("2021-06-02"),
-    url: "https://www.w3schools.com/tags/tag_progress.asp"
+    url: "https://www.udemy.com/certificate/UC-14aa4d9b-1232-46bf-a0c4-0545a2fb2cbb/"
   },
   {
     title: "Curso Desenvolvedor Web Completo + 10 projetos",
     issuerName: "Udemy",
     issuerImg: "udemy.jpeg",
     issuedDate: new Date("2020-04-02"),
-    url: "https://www.w3schools.com/tags/tag_progress.asp"
+    url: "https://www.udemy.com/certificate/UC-1f48e892-bdb2-42d0-b139-38c00d1709fa/"
   },
 ]
 </script>
