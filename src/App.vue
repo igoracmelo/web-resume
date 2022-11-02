@@ -75,6 +75,13 @@ import CertificatesGrid from './components/CertificatesGrid.vue';
     align-items: center
     gap: 30px
 
+    &::before
+      content: ""
+      display: block
+      // width: 25%
+      flex: 1
+      border-top: 1px solid black
+
     &::after
       content: ""
       display: block
