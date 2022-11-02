@@ -1,6 +1,7 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+
+import CertificatesGrid from './components/CertificatesGrid.vue';
+
 </script>
 
 <template>
@@ -47,28 +48,9 @@
       </div>
 
       <div class="main__heading">Certificates</div>
-      <div class="certificates-grid">
-        <div class="certificate fx-col" v-for="i in 3" :key="i">
-          <div class="fx-row g10">
-            <img src="/hackerrank.jpeg" class="certificate__issuer-img" />
-            <div class="certificate__title">
-              Advanced CSS and Sass: Flexbox, Grid, Animations and More!
-            </div>
-          </div>
-          <div class="fx-row content-between items-center">
-            <div class="certificate__date">Issued on Jun 2022</div>
-            <a href="#" class="certificate__view">View credential →</a>
-          </div>
-        </div>
-        <!-- <div class="certificate__issuer">
-          Udemy
-        </div> -->
-        <!-- <div class="certificate">certificate</div> -->
-      </div>
+      <certificates-grid />
     </main>
   </div>
-  <!-- <div class="fx-row">
-  </div> -->
 </template>
 
 <style lang="sass">
@@ -77,32 +59,6 @@
   padding: 0
   margin: 0
   font-family: arial
-
-.certificates-grid
-  display: grid
-  grid-template-columns: repeat(2, 1fr)
-  gap: 25px
-
-.certificate
-  border: 1px solid red
-  // height: 200px
-  padding: 15px
-  gap: 20px
-
-  &__title
-    font-size: 20px
-
-  &__issuer-img
-    width: 50px
-    height: 50px
-    border-radius: 25%
-
-  &__view
-    padding: 7px 20px
-    border: 1px solid red
-    border-radius: 1000px
-    text-align: center
-    // width: 200px
 
 .g10
   gap: 10px
