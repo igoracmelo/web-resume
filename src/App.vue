@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import CertificatesGrid from './components/CertificatesGrid.vue';
 import Experiences from './components/Experiences.vue';
 import Sidebar from './components/Sidebar.vue';
+import HackerrankBadge from './components/HackerrankBadge.vue';
 
 const collapseSidebar = ref(false)
 // const sidebar = ref(null)
@@ -14,6 +15,7 @@ const collapseSidebar = ref(false)
 </script>
 
 <template>
+  <!-- TODO: hover effects -->
   <div class="app">
     <div class="resume fx-row">
       <sidebar />
@@ -30,6 +32,16 @@ const collapseSidebar = ref(false)
 
         <div class="main__heading">Certificates</div>
         <certificates-grid />
+
+        <div class="main__heading">Others</div>
+        <div class="others__heading">Personal Projects</div>
+        <p>(TODO)</p>
+        <div class="others__heading">HackerRank Badges</div>
+        <div class="badges fx-row g10">
+          <hackerrank-badge color="silver" image="/problem-solving.svg" title="Problem Solving" :stars="3" />
+          <hackerrank-badge color="gold" image="/cpp.svg" title="CPP" :stars="5" />
+          <hackerrank-badge color="silver" image="/python.svg" title="Python" :stars="4" />
+        </div>
       </main>
     </div>
   </div>
@@ -45,11 +57,16 @@ const collapseSidebar = ref(false)
   justify-content: center
   background-color: hsl(0, 0, 75%)
 
+.others__heading
+  padding: 10px 0
+  font-size: 20px
+  font-weight: bold
+
 .resume
   // width: 100vw
   position: relative
   height: 100%
-  margin: 30px 0
+  margin: 40px 0
   width: 100vw
   max-width: 1200px
   background-color: white

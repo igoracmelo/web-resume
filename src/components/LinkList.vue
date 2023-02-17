@@ -5,6 +5,7 @@ const links = [
   { icon: 'fa fa-envelope-o', url: 'mailto:igoracm@outlook.com', text: 'igoracm@outlook.com' },
   { icon: 'fa fa-linkedin', url: 'https://www.linkedin.com/in/igoracmelo/', text: 'linkedin.com/in/igoracmelo' },
   { icon: 'fa fa-github', url: 'http://www.github.com/igoracmelo', text: 'github.com/igoracmelo' },
+  { icon: 'fa fa-header', url: 'https://www.hackerrank.com/igoracmelo', text: 'hackerrank.com/igoracmelo' },
   { icon: 'fa fa-pencil-square-o', url: 'https://dev.to/tutorial_livre', text: 'dev.to/tutorial_livre' },
   { icon: 'fa fa-youtube-play', url: 'https://www.youtube.com/channel/UC7V4vg-lqAl40dpDQjxJg9w', text: 'Tutorial Livre' },
 ]
